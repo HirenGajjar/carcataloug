@@ -9,12 +9,12 @@ function CustomButton({
 }: CustomButtonProps) {
   return (
     <button
-      onClick={() => {}}
+      onClick={handleClick}
       disabled={false}
       type={"button"}
-      className="custom-btn"
+      className={`custom-btn ${containerStyles}  `}
     >
-      <span className={`flex-1`}>Button</span>
+      <span className={`flex-1`}>{title}</span>
     </button>
   );
 }
